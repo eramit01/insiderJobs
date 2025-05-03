@@ -6,7 +6,7 @@ import { useRef } from 'react';
 const Hero = () => {
   const {setSearchFilter,setIsSearched}=useContext(AppContext)
 
-  const titleRef=useRef(null)
+  const titleRef=useRef(null) // ye input ke text ko read krne ke liye use karate hai starting me eski value ko maine null rkah hai  jab search button pr vcliack karenge toh uskee current value ko update karunga 
   const locationRef=useRef(null)
   const onSearch=()=>{
 setSearchFilter({
